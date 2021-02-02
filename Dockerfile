@@ -2,5 +2,6 @@ FROM tomcat
 WORKDIR /usr/local/tomcat/webapps
 RUN mkdir hello
 WORKDIR hello
-COPY myapp .
+COPY myapp . 
+# entire directory content will be copied to hello directory 
 EXPOSE 8080
